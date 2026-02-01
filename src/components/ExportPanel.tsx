@@ -122,7 +122,7 @@ export default function ExportPanel({ languageCode, languageName, data, stats }:
           Once you're happy with your translation, submit it to be included in Bambuddy!
         </p>
         <a
-          href="https://github.com/bambulab/bambuddy/issues/new?template=translation.md"
+          href="https://github.com/maziggy/bambuddy-languages/issues/new"
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full py-2 text-center bg-bambu-dark-tertiary hover:bg-bambu-dark-tertiary/70 rounded-lg font-medium transition-colors"
