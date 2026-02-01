@@ -16,7 +16,7 @@ export interface TranslationEntry {
 // Languages already available in Bambuddy
 // This will be updated as translations are added
 const AVAILABLE_LANGUAGES: { code: string; name: string; native: string; completion: number }[] = [
-  // Example: { code: 'de', name: 'German', native: 'Deutsch', completion: 100 },
+  { code: 'en', name: 'English', native: 'English', completion: 100 },
 ]
 
 function App() {

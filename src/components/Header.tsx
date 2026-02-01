@@ -22,7 +22,7 @@ export default function Header({ languageCode, languageName, stats }: HeaderProp
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
             <img
-              src="https://bambuddy.cool/logo.png"
+              src="/logo.png"
               alt="Bambuddy"
               className="w-10 h-10 rounded"
             />
