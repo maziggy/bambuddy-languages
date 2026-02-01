@@ -24,7 +24,7 @@ export default function Header({ languageCode, languageName, stats }: HeaderProp
             <img
               src="/logo.png"
               alt="Bambuddy"
-              className="w-10 h-10 rounded"
+              className="h-12 w-auto"
             />
             <div>
               <h1 className="text-xl font-bold">Bambuddy Languages</h1>
