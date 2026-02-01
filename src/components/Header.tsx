@@ -13,28 +13,30 @@ export default function Header({ languageCode, languageName, stats }: HeaderProp
 
   return (
     <header className="bg-bambu-dark-secondary border-b border-bambu-dark-tertiary">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-4">
+      <div className="container mx-auto px-4 py-4">
+        {/* Logo and title - centered */}
+        <div className="flex items-center justify-center gap-4">
           <a
             href="https://bambuddy.cool"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity"
           >
             <img
               src="/logo.png"
               alt="Bambuddy"
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
-            <div>
-              <h1 className="text-xl font-bold">Bambuddy Languages</h1>
-              <p className="text-sm text-bambu-gray">Translation Contribution Tool</p>
-            </div>
           </a>
+          <div className="text-center">
+            <h1 className="text-2xl font-bold">Bambuddy Languages</h1>
+            <p className="text-sm text-bambu-gray">Translation Contribution Tool</p>
+          </div>
         </div>
 
+        {/* Stats bar - shown when translating */}
         {languageCode && stats && (
-          <div className="flex items-center gap-6">
+          <div className="flex items-center justify-center gap-6 mt-4 pt-4 border-t border-bambu-dark-tertiary">
             <div className="text-right">
               <div className="text-sm text-bambu-gray">Translating to</div>
               <div className="font-medium">{languageName} ({languageCode})</div>
