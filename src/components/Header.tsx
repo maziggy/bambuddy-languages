@@ -14,14 +14,23 @@ export default function Header({ languageCode, languageName, stats }: HeaderProp
   return (
     <header className="bg-bambu-dark-secondary border-b border-bambu-dark-tertiary">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <svg className="w-8 h-8 text-bambu-green" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-          </svg>
-          <div>
-            <h1 className="text-xl font-bold">Bambuddy Languages</h1>
-            <p className="text-sm text-bambu-gray">Translation Contribution Tool</p>
-          </div>
+        <div className="flex items-center gap-4">
+          <a
+            href="https://bambuddy.cool"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+          >
+            <img
+              src="https://bambuddy.cool/logo.png"
+              alt="Bambuddy"
+              className="w-10 h-10 rounded"
+            />
+            <div>
+              <h1 className="text-xl font-bold">Bambuddy Languages</h1>
+              <p className="text-sm text-bambu-gray">Translation Contribution Tool</p>
+            </div>
+          </a>
         </div>
 
         {languageCode && stats && (

@@ -13,6 +13,12 @@ export interface TranslationEntry {
   isAuto: boolean
 }
 
+// Languages already available in Bambuddy
+// This will be updated as translations are added
+const AVAILABLE_LANGUAGES: { code: string; name: string; native: string; completion: number }[] = [
+  // Example: { code: 'de', name: 'German', native: 'Deutsch', completion: 100 },
+]
+
 function App() {
   const [targetLanguage, setTargetLanguage] = useState('')
   const [languageName, setLanguageName] = useState('')
@@ -82,7 +88,10 @@ function App() {
       <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1 container mx-auto px-4 py-8">
-          <LanguageSelector onStart={handleStartTranslation} />
+          <LanguageSelector
+            onStart={handleStartTranslation}
+            availableLanguages={AVAILABLE_LANGUAGES}
+          />
         </main>
       </div>
     )
